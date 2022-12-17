@@ -774,6 +774,15 @@ footer {
         width: 370px;
     }
 
+    .company-name {
+        width: 80vw;
+        margin: auto;
+    }
+
+    #infosys {
+        margin-top: 30px;
+    }
+
     #link-container {
         width: 80vw;
     }
@@ -870,5 +879,18 @@ footer {
     .project-tile:hover .github-icon,
     .project-tile:hover .link-icon {
         visibility: visible;
+    }
+
+    .company-name {
+        width: 700px;
+    }
+
+    #freelance {
+        margin-right: 70px;
+    }
+
+    #infosys {
+        margin-left: 70px;
+        margin-top: 30px;
     }
 }
