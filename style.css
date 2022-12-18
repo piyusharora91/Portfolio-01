@@ -379,7 +379,7 @@ main {
     background: rgb(45, 45, 45);
     border-radius: 10px;
     z-index: 1;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 10px;
     user-select: none;
@@ -388,6 +388,7 @@ main {
 .tint {
     padding: 0;
     margin: 0;
+    border-radius: 10px;
 }
 
 .project-image {
@@ -412,6 +413,8 @@ main {
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
+    position: relative;
+    bottom: 3px;
 }
 
 .github-icon {
@@ -454,7 +457,7 @@ main {
     padding: 35px 5px;
     color: white;
     height: 100%;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
 }
 
 #work-experience h1 {
@@ -463,10 +466,30 @@ main {
 }
 
 .company-name {
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.company-name img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+.company-name .experience-details-container {
+    margin: auto;
     margin-top: 30px;
     border: 2px solid white;
     padding: 5px;
     border-radius: 20px;
+    width: 100%;
+}
+
+#freelance {
+    justify-self: flex-end;
 }
 
 #infosys h1,
@@ -532,7 +555,7 @@ main {
     padding: 0;
     width: 90%;
     text-align: center;
-    font-size: 30px;
+    font-size: 2.1rem;
     font-weight: 350;
 }
 
@@ -673,7 +696,7 @@ footer {
 /* footer section ends here */
 
 .section-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -784,7 +807,7 @@ footer {
     }
 
     #link-container {
-        width: 80vw;
+        width: 55%;
     }
 
     #mail {
@@ -854,7 +877,7 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 10px;
         background: rgba(0, 0, 0, 0.5);
         -webkit-transition: all 0.9s ease-out;
         transition: all 0.9s ease-out;
@@ -882,15 +905,23 @@ footer {
     }
 
     .company-name {
-        width: 700px;
-    }
-
-    #freelance {
-        margin-right: 70px;
+        width: 95vw;
     }
 
     #infosys {
-        margin-left: 70px;
-        margin-top: 30px;
+        flex-direction: row-reverse;
+    }
+
+    .company-name .experience-details-container {
+        width: 60%;
+    }
+
+    .contact-header {
+        font-size: 2.3rem;
+        font-weight: 350;
+    }
+
+    #link-container {
+        width: 500px;
     }
 }
